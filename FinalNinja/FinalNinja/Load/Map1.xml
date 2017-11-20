@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Map>
+  <TileDimensions>
+    <X>32</X>
+    <Y>32</Y>
+  </TileDimensions>
+
+  <Layer>
+    <Image>
+      <Path>Gameplay/TileSheet/Ground</Path>
+    </Image>
+    <TileMap>
+      <Row>[0:0][0:0][0:0][2:0][0:0][0:0][0:0][0:0][1:0][0:0][1:0]</Row>
+      <Row>[0:0][0:0][0:0][2:0][0:0][0:0][0:0][0:0][0:0][0:0][1:0]</Row>
+      <Row>[0:0][0:0][0:0][2:0][2:0][0:0][0:0][0:0][0:0][1:0][1:0]</Row>
+      <Row>[0:0][0:0][0:0][0:0][2:0][2:0][0:0][0:0][1:0][1:0][0:0]</Row>
+      <Row>[0:0][0:0][0:0][0:0][0:0][2:0][0:0][0:0][1:0][0:0][0:0]</Row>
+      <Row>[0:0][0:0][0:0][0:0][0:0][1:0][1:0][1:0][0:0][0:0][0:0]</Row>
+      <Row>[0:0][0:0][0:0][0:0][0:0][0:0][1:0][1:0][0:0][1:0][0:0]</Row>
+      <Row>[0:0][0:0][0:0][0:0][0:0][0:0][0:0][1:0][1:0][0:0][0:0]</Row>
+      <Row>[0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0]</Row>
+    </TileMap>
+  </Layer>
+
+  <Layer>
+    <Image>
+      <Path>Gameplay/TileSheet/Ground</Path>
+    </Image>
+    <SolidTiles>[7:2]</SolidTiles>
+    <OverlayTiles>[7:1][6:0][7:0][8:0]</OverlayTiles>
+    <TileMap>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][6:0][7:0][8:0][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][7:1][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][7:2][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+    </TileMap>
+  </Layer>
+</Map>
