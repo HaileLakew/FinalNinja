@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalNinja", "FinalNinja\FinalNinja\FinalNinja.csproj", "{0D678B49-6531-4FAC-9322-A43A3CA7EB2B}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "FinalNinjaContent", "FinalNinja\FinalNinjaContent\FinalNinjaContent.contentproj", "{9850780B-3DFA-4EDA-A16F-3D28C9747155}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D678B49-6531-4FAC-9322-A43A3CA7EB2B}.Debug|x86.ActiveCfg = Debug|x86
+		{0D678B49-6531-4FAC-9322-A43A3CA7EB2B}.Debug|x86.Build.0 = Debug|x86
+		{0D678B49-6531-4FAC-9322-A43A3CA7EB2B}.Release|x86.ActiveCfg = Release|x86
+		{0D678B49-6531-4FAC-9322-A43A3CA7EB2B}.Release|x86.Build.0 = Release|x86
+		{9850780B-3DFA-4EDA-A16F-3D28C9747155}.Debug|x86.ActiveCfg = Debug|x86
+		{9850780B-3DFA-4EDA-A16F-3D28C9747155}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
