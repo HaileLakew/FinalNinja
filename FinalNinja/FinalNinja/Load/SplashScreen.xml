@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <SplashScreen>
   <Image>
-    <Path>SplashScreen/image1</Path>
+    <Path>SplashScreen/skyline</Path>
     <IsActive>true</IsActive>
     <Effects></Effects>
     <Position>

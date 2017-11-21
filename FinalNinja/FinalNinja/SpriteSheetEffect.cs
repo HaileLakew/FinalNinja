@@ -36,7 +36,7 @@ namespace FinalNinja
 
         public SpriteSheetEffect()
         {
-            AmountOfFrames = new Vector2(3, 4);
+            AmountOfFrames = new Vector2(4, 4);
             CurrentFrame = new Vector2(1, 0);//default sprite 
             SwitchFrame = 100;
             FrameCounter = 0;

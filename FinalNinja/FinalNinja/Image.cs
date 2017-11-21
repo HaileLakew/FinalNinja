@@ -146,6 +146,56 @@ namespace FinalNinja
             }
          }
 
+        public void LoadContent(Vector2 Coords)
+        {
+            Position = Coords;
+            content = new ContentManager(
+                ScreenManager.Instance.Content.ServiceProvider, "Content");
+
+            if (Path != String.Empty)
+                Texture = content.Load<Texture2D>(Path);
+            font = content.Load<SpriteFont>(FontName);
+
+            Vector2 dimensions = Vector2.Zero;
+
+            if (Texture != null)
+                dimensions.X += Texture.Width;
+            dimensions.X += font.MeasureString(Text).X;
+
+            if (Texture != null)
+                dimensions.Y = Math.Max(Texture.Height, font.MeasureString(Text).Y);
+            else
+                dimensions.Y = font.MeasureString(Text).Y;
+
+            if (SourceRect == Rectangle.Empty)
+            {
+                SourceRect = new Rectangle(0, 0, (int)dimensions.X, (int)dimensions.Y);
+            }
+            renderTarget = new RenderTarget2D(ScreenManager.Instance.GraphicsDevice, (int)dimensions.X, (int)dimensions.Y);
+            ScreenManager.Instance.GraphicsDevice.SetRenderTarget(renderTarget);
+            ScreenManager.Instance.GraphicsDevice.Clear(Color.Transparent);
+            ScreenManager.Instance.SpriteBatch.Begin();
+            if (Texture != null)
+                ScreenManager.Instance.SpriteBatch.Draw(Texture, Vector2.Zero, Color.White);
+            ScreenManager.Instance.SpriteBatch.DrawString(font, Text, Vector2.Zero, Color.White);
+            ScreenManager.Instance.SpriteBatch.End();
+
+            Texture = renderTarget;//sets text and image to one image
+            ScreenManager.Instance.GraphicsDevice.SetRenderTarget(null);
+
+            setEffect<FadeEffect>(ref FadeEffect);
+            setEffect<SpriteSheetEffect>(ref SpriteSheetEffect);
+
+            if (Effects != String.Empty)//loop through effects and activate them 
+            {
+                string[] split = Effects.Split(':');
+                foreach (string item in split)
+                {
+                    ActivateEffect(item);
+                }
+            }
+        }
+
         public void UnloadContent()
         {
             content.Unload();

@@ -10,7 +10,8 @@ namespace FinalNinja
 {
     public class GameplayScreen :GameScreen
     {
-        Player player;
+        Player playerb;
+        Player playerw;
         Map map;
 
         public override void LoadContent()
@@ -18,29 +19,37 @@ namespace FinalNinja
             base.LoadContent();
 
             XmlManager<Player> playerLoader = new XmlManager<Player>();
+            XmlManager<Player> playerwLoader = new XmlManager<Player>();
             XmlManager<Map> mapLoader = new XmlManager<Map>();
-            player = playerLoader.Load("Load/Player.xml");
+            playerb = playerLoader.Load("Load/Playerb.xml");
+            playerw = playerwLoader.Load("Load/Playerw.xml");
             map = mapLoader.Load("Load/Map1.xml");
-            player.LoadContent();
+            playerb.LoadContent();
+            playerw.LoadContent();
             map.LoadContent();
         }
         public override void UnloadContent()
         {
             base.UnloadContent();
-            player.UnloadContent();
+            playerb.UnloadContent();
+            playerw.UnloadContent();
             map.UnloadContent();
         }
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
-            player.Update(gameTime);
-            map.Update(gameTime, ref player);
+            playerb.Update(gameTime);
+            playerw.Update(gameTime);
+            
+            map.Update(gameTime, ref playerb);
+            map.Update(gameTime, ref playerw);
         }
         public override void Draw(SpriteBatch spriteBatch)
         {
             base.Draw(spriteBatch);
             map.Draw(spriteBatch, "Underlay");//under the player
-            player.Draw(spriteBatch);
+            playerb.Draw(spriteBatch);
+            playerw.Draw(spriteBatch);
             map.Draw(spriteBatch, "Overlay");
         }
     }

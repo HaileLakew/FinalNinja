@@ -57,8 +57,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SplashScreen\image1.png">
-      <Name>image1</Name>
+    <Compile Include="SplashScreen\skyline.png">
+      <Name>skyline</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gameplay\playerw.png">
+      <Name>playerw</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gameplay\playerb.png">
+      <Name>playerb</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

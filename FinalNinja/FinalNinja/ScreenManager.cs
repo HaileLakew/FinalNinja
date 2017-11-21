@@ -76,11 +76,11 @@ namespace FinalNinja
 
         public ScreenManager()//constructor
         {
-            Dimensions = new Vector2(640, 480);
-            currentScreen = new GameplayScreen();
+            Dimensions = new Vector2(800, 600);
+            currentScreen = new SplashScreen();
             xmlGameScreenManager= new XmlManager<GameScreen>();
             xmlGameScreenManager.Type = currentScreen.Type;
-            //currentScreen = xmlGameScreenManager.Load("Load/SplashScreen.xml");
+            currentScreen = xmlGameScreenManager.Load("Load/SplashScreen.xml");
         }
         public void LoadContent(ContentManager Content)
         {

@@ -39,7 +39,7 @@ namespace FinalNinja
             {
                 Rectangle tileRect = new Rectangle((int)Position.X, (int)Position.Y, sourceRect.Width, sourceRect.Height);
                 Rectangle playerRect = new Rectangle((int)player.Image.Position.X, (int)player.Image.Position.Y, player.Image.SourceRect.Width, player.Image.SourceRect.Height);
-                
+
                 if (playerRect.Intersects(tileRect))
                 {
                     /*Console.WriteLine("asd");
@@ -52,18 +52,24 @@ namespace FinalNinja
                     else
                         player.Image.Position.Y = tileRect.Top - player.Image.SourceRect.Height;
                     */
-                    
-                    if (player.Velocity.X < 0)
+                    if (player.Velocity.Y < 0)
+                        player.Image.Position.Y = tileRect.Bottom;
+                    else if (player.Velocity.Y > 0)
+                    {
+                        player.grounded = true;
+                        player.Image.Position.Y = tileRect.Top - player.Image.SourceRect.Height;
+                    }
+                    else if (player.Velocity.X < 0)
                         player.Image.Position.X = tileRect.Right;
                     else if (player.Velocity.X > 0)
                         player.Image.Position.X = tileRect.Left - player.Image.SourceRect.Width;//x coord is left side of player, so when colliding on the left side of the obstacle, need to offset the player
-                    else if (player.Velocity.Y < 0)
-                        player.Image.Position.Y = tileRect.Bottom;
-                    else
-                        player.Image.Position.Y = tileRect.Top - player.Image.SourceRect.Height;
-                    
+
+
                     player.Velocity = Vector2.Zero;
                 }
+                else if(player.Velocity.Y==0)
+                    if (player.Velocity.Y < 3)
+                        player.Velocity.Y += player.MoveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
             }
         }
         public void Draw(SpriteBatch spriteBatch)
