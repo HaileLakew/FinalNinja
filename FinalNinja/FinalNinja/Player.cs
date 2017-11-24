@@ -19,6 +19,8 @@ namespace FinalNinja
         public bool grounded;
         public bool Class;//true=b, false=w
 
+        public bool dead = false;
+
         public Player()
         {
             Velocity = Vector2.Zero;
@@ -36,8 +38,12 @@ namespace FinalNinja
             Image.UnloadContent();
         }
 
-        public void Update(GameTime gameTime)
+        private bool attack;
+
+        public void Update(GameTime gameTime, Vector2 pbLoc, Vector2 pwLoc)
         {
+            attack = (pbLoc.X - pwLoc.X <= 30 && pbLoc.X - pwLoc.X >= -30)  && (pbLoc.Y - pwLoc.Y <= 30 && pbLoc.Y - pwLoc.Y >= -30);
+
             Image.IsActive = true;
             if (Class)
             {
@@ -60,6 +66,14 @@ namespace FinalNinja
                     }
                     else
                         Velocity.X = 0;
+
+                    if (InputManager.Instance.KeyDown(Keys.Down))
+                    {
+                        if (attack)
+                            dead = true;
+
+                        Image.SpriteSheetEffect.CurrentFrame.Y = 4;
+                    }
                 }
                 if (grounded)
                 {
@@ -83,6 +97,14 @@ namespace FinalNinja
                         grounded = false;
                     }
                     else Velocity.Y = 0;
+
+                    if (InputManager.Instance.KeyDown(Keys.Down))
+                    {
+                        if (attack)
+                            dead = true;
+
+                        Image.SpriteSheetEffect.CurrentFrame.Y = 4;
+                    }
                 }
 
                 if (Velocity.X == 0 && Velocity.Y == 0)
@@ -113,6 +135,13 @@ namespace FinalNinja
                     }
                     else
                         Velocity.X = 0;
+
+                    if (InputManager.Instance.KeyDown(Keys.S))
+                    {
+                        if (attack)
+                            dead = true;
+                        Image.SpriteSheetEffect.CurrentFrame.Y = 4;
+                    }
                 }
                 if (grounded)
                 {
@@ -136,6 +165,13 @@ namespace FinalNinja
                         grounded = false;
                     }
                     else Velocity.Y = 0;
+
+                    if (InputManager.Instance.KeyDown(Keys.S))
+                    {
+                        if (attack)
+                            dead = true;
+                        Image.SpriteSheetEffect.CurrentFrame.Y = 4;
+                    }
                 }
 
                 if (Velocity.X == 0 && Velocity.Y == 0)
