@@ -59,7 +59,7 @@ namespace FinalNinja
             // video to fill the screen
             Rectangle screen = new Rectangle(0,
                 0,
-                800,
+                900,
                 600);
 
             // Draw the video, if we have a texture to draw.

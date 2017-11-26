@@ -42,21 +42,10 @@ namespace FinalNinja
 
                 if (playerRect.Intersects(tileRect))
                 {
-                    /*Console.WriteLine("asd");
-                    if (playerRect.Left <= tileRect.Right)
-                        player.Image.Position.X = tileRect.Right;
-                    else if (playerRect.Right >= tileRect.Left)
-                        player.Image.Position.X = tileRect.Left - player.Image.SourceRect.Width;
-                    else if (playerRect.Top <= tileRect.Bottom)
-                        player.Image.Position.Y = tileRect.Bottom;
-                    else
-                        player.Image.Position.Y = tileRect.Top - player.Image.SourceRect.Height;
-                    */
                     if (player.Velocity.Y < 0)
                         player.Image.Position.Y = tileRect.Bottom;
                     else if (player.Velocity.Y > 0)
                     {
-                        player.grounded = true;
                         player.Image.Position.Y = tileRect.Top - player.Image.SourceRect.Height;
                     }
                     else if (player.Velocity.X < 0)

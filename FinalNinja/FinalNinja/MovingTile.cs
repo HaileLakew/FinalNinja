@@ -50,6 +50,9 @@ namespace FinalNinja
             Image.Update(gameTime);
             Image.Position += Velocity;
 
+            if (this.Image.Position.Y < 100)
+                this.Image.Alpha = 0;
+
             if (this.Image.Position.Y < 0)
             {
                 this.Image.Alpha = 1;
