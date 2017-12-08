@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Axis>Y</Axis>
+  <Item>
+  <LinkID>Load/ControlsMenu.xml</LinkID>
+    <Image>
+      <Text>Controls</Text>
+    </Image>
+  </Item>
+  <Item>
+    <Image>
+      <Text>White Player</Text>
+    </Image>
+  </Item>
+  <Item>
+    <Image>
+      <Text>Move left - A, Move right - D, Jump - W, Attack - S</Text>
+    </Image>
+  </Item>
+
+  <Item>
+    <Image>
+      <Text>Black Player</Text>
+    </Image>
+  </Item>
+
+  <Item>
+    <Image>
+      <Text>Move left - leftArrow, Move right - rightArrow, Jump - upArrow, Attack - downArrow</Text>
+    </Image>
+  </Item>
+
+  <Item>
+    <Image>
+      <Text>Menu - backspace, Q</Text>
+    </Image>
+  </Item>
+  <Item>
+    <Image>
+      <Text>Quit game - escape</Text>
+    </Image>
+  </Item>
+</Menu>

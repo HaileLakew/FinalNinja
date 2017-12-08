@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Map>
+<Text>FinalNinja</Text>
+
   <TileDimensions>
     <X>32</X>
     <Y>32</Y>
@@ -10,15 +12,25 @@
       <Path>Gameplay/TileSheet/Ground</Path>
     </Image>
     <TileMap>
-      <Row>[0:0][0:0][0:0][2:0][0:0][0:0][0:0][0:0][1:0][0:0][0:0]</Row>
-      <Row>[0:0][0:0][0:0][2:0][0:0][0:0][0:0][0:0][0:0][0:0][1:0]</Row>
-      <Row>[0:0][0:0][0:0][2:0][2:0][0:0][0:0][0:0][0:0][1:0][1:0]</Row>
-      <Row>[0:0][0:0][0:0][0:0][2:0][2:0][0:0][0:0][1:0][1:0][0:0]</Row>
-      <Row>[0:0][0:0][0:0][0:0][0:0][2:0][0:0][0:0][1:0][0:0][0:0]</Row>
-      <Row>[0:0][0:0][0:0][0:0][0:0][1:0][1:0][1:0][0:0][0:0][0:0]</Row>
-      <Row>[0:0][0:0][0:0][0:0][0:0][0:0][1:0][1:0][0:0][1:0][0:0]</Row>
-      <Row>[0:0][0:0][0:0][0:0][0:0][0:0][0:0][1:0][1:0][0:0][0:0]</Row>
-      <Row>[0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+	  <Row>[0:0][0:0][x:x][2:0][0:0][0:0][0:0][4:0][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][0:0][0:0][x:x]</Row>
+      <Row>[0:0][x:x][x:x][2:0][0:0][x:x][x:x][4:0][x:x][x:x][x:x][x:x][0:0][0:0][x:x][x:x][x:x][1:0][1:0][x:x][x:x][x:x][0:0][0:0][1:0]</Row>
+      <Row>[0:0][0:0][0:0][2:0][2:0][0:0][0:0][0:0][x:x][x:x][x:x][x:x][0:0][3:0][3:0][3:0][x:x][x:x][1:0][1:0][0:0][x:x][0:0][0:0][1:0]</Row>
+      <Row>[0:0][x:x][x:x][0:0][2:0][2:0][0:0][0:0][x:x][x:x][x:x][x:x][0:0][0:0][0:0][0:0][x:x][x:x][1:0][1:0][0:0][x:x][0:0][0:0][0:0]</Row>
+      <Row>[0:0][0:0][x:x][x:x][x:x][2:0][x:x][x:x][1:0][0:0][0:0][0:0][x:x][x:x][0:0][0:0][0:0][4:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0]</Row>
+      <Row>[0:0][x:x][0:0][0:0][0:0][x:x][1:0][1:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0]</Row>
+      <Row>[0:0][4:0][0:0][0:0][x:x][4:0][1:0][1:0][x:x][1:0][0:0][0:0][x:x][x:x][0:0][0:0][x:x][x:x][x:x][4:0][3:0][x:x][x:x][3:0][0:0]</Row>
+      <Row>[0:0][0:0][0:0][x:x][x:x][4:0][4:0][1:0][1:0][x:x][4:0][0:0][0:0][0:0][x:x][x:x][0:0][0:0][0:0][0:0][0:0][4:0][0:0][0:0][0:0]</Row>
+      <Row>[0:0][0:0][x:x][x:x][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][4:0][0:0][x:x][x:x][x:x][0:0][0:0]</Row>
+	  <Row>[0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0][0:0]</Row>
     </TileMap>
   </Layer>
 
@@ -26,18 +38,28 @@
     <Image>
       <Path>Gameplay/TileSheet/Ground</Path>
     </Image>
-    <SolidTiles>[7:2]</SolidTiles>
-    <OverlayTiles>[7:1][6:0][7:0][8:0]</OverlayTiles>
+    <SolidTiles>[1:0][0:1][1:1][2:1]</SolidTiles>
+    <OverlayTiles>[0:1][1:1][2:1]</OverlayTiles>
     <TileMap>
-      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
-      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
-      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
-      <Row>[x:x][x:x][x:x][x:x][6:0][7:0][8:0][x:x][x:x][x:x][x:x]</Row>
-      <Row>[x:x][x:x][x:x][x:x][x:x][7:1][x:x][x:x][x:x][x:x][x:x]</Row>
-      <Row>[x:x][x:x][x:x][x:x][x:x][7:2][x:x][x:x][x:x][x:x][x:x]</Row>
-      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
-      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
-      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][0:1][1:1][2:1][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][0:1][2:1][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][0:1][1:1][2:1][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][0:1][1:1][2:1][x:x][x:x][x:x][x:x][x:x]</Row>
+	  <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][0:1][1:1][2:1][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][0:1][2:1][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][0:1][2:1][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][0:1][1:1][1:1][1:1][2:1][x:x][x:x][x:x][x:x][x:x][x:x][x:x][0:1][2:1][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[0:1][1:1][1:1][1:1][2:1][x:x][x:x][x:x][x:x][x:x][x:x][x:x][0:1][1:1][2:1][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+	  <Row>[x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x][x:x]</Row>
+      <Row>[1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0][1:0]</Row>
     </TileMap>
   </Layer>
 </Map>

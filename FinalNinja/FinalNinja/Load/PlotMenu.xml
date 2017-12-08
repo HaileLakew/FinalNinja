@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Axis>Y</Axis>
+  
+  <Item>
+    <Image>
+      <Text>Plot</Text>
+    </Image>
+  </Item>
+
+  <Item>
+    <Image>
+      <Text>Plot</Text>
+    </Image>
+  </Item>
+
+  <Item>
+    <Image>
+      <Text>Plot</Text>
+    </Image>
+  </Item>
+
+  <Item>
+    <Image>
+      <Text>Plot</Text>
+    </Image>
+  </Item>
+</Menu>

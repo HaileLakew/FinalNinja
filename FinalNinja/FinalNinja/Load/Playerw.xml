@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Player>
+  <Image>
+    <Path>Gameplay/playerw</Path>
+    <Effects>SpriteSheetEffect</Effects>
+  </Image>
+  <MoveSpeed>150</MoveSpeed>
+  <Coords>
+  <X>100</X>
+  <Y>100</Y>
+  </Coords>
+  <Class>false</Class>
+</Player>

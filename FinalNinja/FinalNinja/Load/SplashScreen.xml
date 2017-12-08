@@ -1,13 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <SplashScreen>
   <Image>
     <Path>SplashScreen/skyline</Path>
     <IsActive>true</IsActive>
     <Effects></Effects>
     <Position>
-      <X>200</X>
-      <Y>100</Y>
+      <X>0</X>
+      <Y>0</Y>
     </Position>
+	<Text>FinalNinja</Text>
     
   </Image>
   

@@ -87,13 +87,21 @@
     <Content Include="GameThumbnail.png">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </Content>
+    <Content Include="Load\BlackTile.xml" />
     <Content Include="Load\BlackWin.xml" />
+    <Content Include="Load\ControlsMenu.xml" />
+    <Content Include="Load\CreditsMenu.xml" />
     <Content Include="Load\Map1.xml" />
     <Content Include="Load\Player.xml" />
+    <Content Include="Load\Playerb.xml" />
+    <Content Include="Load\Playerw.xml" />
+    <Content Include="Load\PlotMenu.xml" />
     <Content Include="Load\ScreenManager.xml" />
     <Content Include="Load\SplashScreen.xml" />
     <Content Include="Load\TestMenu.xml" />
     <Content Include="Load\TitleMenu.xml" />
+    <Content Include="Load\Video.xml" />
+    <Content Include="Load\WhiteTile.xml" />
     <Content Include="Load\WhiteWin.xml" />
   </ItemGroup>
   <ItemGroup>

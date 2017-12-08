@@ -106,9 +106,9 @@ namespace FinalNinja
             }
             else if (Axis == "Y")
             {
-                if (InputManager.Instance.KeyPressed(Keys.Right))
+                if (InputManager.Instance.KeyPressed(Keys.Down))
                     itemNumber++;
-                else if (InputManager.Instance.KeyPressed(Keys.Left))
+                else if (InputManager.Instance.KeyPressed(Keys.Up))
                     itemNumber--;
             }
             if (itemNumber < 0)
@@ -124,6 +124,11 @@ namespace FinalNinja
                     Items[i].Image.IsActive = false;
 
                 Items[i].Image.Update(gameTime);
+            }
+
+            if (InputManager.Instance.KeyPressed(Keys.Back) || InputManager.Instance.KeyPressed(Keys.Q))
+            {
+                ScreenManager.Instance.ChangeScreens("TitleScreen");
             }
         }
         public void Draw(SpriteBatch spritebatch)

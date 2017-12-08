@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Axis>Y</Axis>
+  <Item>
+    <Image>
+      <Text>Credits</Text>
+    </Image>
+  </Item>
+  
+  <Item>
+    <Image>
+      <Text>Executive Sprite Illustrator.......................Meg Fernandez</Text>
+    </Image>
+  </Item>
+
+  <Item>
+    <Image>
+      <Text>Lead Plot Writer and Visionary.....................Haile Lakew</Text>
+    </Image>
+  </Item>
+
+  <Item>
+    <Image>
+      <Text>Chief Game Architect...............................Devin Ashmore</Text>
+    </Image>
+  </Item>
+
+  
+</Menu>
